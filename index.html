@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<nav class = "navbar">
+<ul>
+ <li><a href="#home">Home</a> </li>   
+<li><a href="#biography">Biography</a> </li>  
+<li><a href="#projects">Projects</a> </li> 
+<li><a href="#contact">Contact</a> </li>  
+<li><a href="#calculator">Calculator</a> </li>
+    
+
+    
+    
+</ul>  
+    
+    
+</nav>
+  <section id = "home">
+    <div clas = "main">
+    <img src="Myscreenshot.png" width="77" 
+     height="77" alt="My screenshot"> 
+    <h1 class ="headings" > HELLO MY NAME IS <br> LUIS BRAVO</h1>
+    <button class = "btn"><a href="https://www.linkedin.com/in/luis-bravo-075373177/">LINKEDIN</a> </button>
+     <button class = "btn"><a href="https://www.fundraisingradio.com/">FUNDRAISING RADIO</a> </button>
+      
+      
+      </div>
+    
+    
+    
+</section>
+
+ <section id = "biography">
+   
+     <div id = "intro">
+     <h1 class = "headings"> BIOGRAPHY</h1>
+     
+       
+    <p>My name is Luis Bravo. I am a computer science student at Santa Monica College and Pasadena City College. 
+        I am taking my math courses at Pasadena and the rest of my other courses at SMC. Hopefully this will be my last semester as a community college student. I have applied to several 4 year universities and hope to hear back from them in the next few weeks. During my time at Community College I have taken and completed a slew of computer science courses, such as C++, Javascript, C, Java, IOS Programming, Advanced Java, Visual Basic, Python, and  Internet Programming (CSS,HTML, Javascript). I am currently taking Cybersecurity and ethical hacking and C++ Data Structures. In addition, to being a student I am also participating in the BASE 11 software engineering Fellowship. In this fellowship I am learning the principles of autonomous vehicle software. Moreover, I am also learning about Raspberry Pi, Arduino, and Python. Furthermore, I am also the head of business development at the podcast Fundraising Radio. At Fundraising Radio we interview startup founders who have successfully raised money and we also interview investors(Angel Investors, Venture Capitalists, etc.). I have shared a link to Fundraising Radio if you would like to check it out.
+        Moreover, I recently got accepted into the Fika Ventures Tech Career Accelerator Program and will start that program by the end of April.When I am not doing any of these things I am helping my father run his buisness. I hope I am accepted into the Snap Engineering Academey Program. It would be a great honor and it would allow me to learn new skills and practice and perfect old ones. Also it would give me the opportunity to meet like minded individuals and learn from some of the best software engineers in the world. Thank you for your time and consideration and I look forward to hearing from you.  </p>
+     
+     
+    </div>
+    
+    </section>
+     
+     
+    <section id = "projects">
+     <h1 class = "headings">PROJECTS</h1>
+     <div class = "gallery">
+      <img src="https://th.bing.com/th/id/OIP.256ud0robb3g-IEExNNFAAHaE8?w=239&h=180&c=7&o=5&dpr=2&pid=1.7" alt="N/A" >
+       <img src="https://th.bing.com/th/id/OIP.256ud0robb3g-IEExNNFAAHaE8?w=239&h=180&c=7&o=5&dpr=2&pid=1.7" alt="N/A" >
+      <p> I have completed many projects throught my time at Community College, I completed both class projects and projects that I have worked on during my free time, however I foolishly did not upload that code onto Github or any other repository. I simply turned in the project then deleted it. In hindsight that was a horrible mistake. Some of the projects I completed in the past are, but is not limited to computer games, number guessing game, email slicer, hangman, madlibs generator, chess game, and payroll management system. I am currently working on a Python and Raspberry PI retro arcade simulator for my Base 11 Internship and will make  a point of uploading that project to Github. </p>  
+        
+    </div>
+    
+     
+    
+    
+</section>   
+    
+<section id = "contact">
+    
+<h1 class = "headings"> CONTACT</h1>    
+    <form action = "" class = "form">
+    <input type = "text" name = "name" class = "input"  placeholder = "Enter Your Name"> 
+    <input type = "email" name = "email" class = "input"  placeholder = "Enter Your Email">
+    <textarea name = "msg" id = "msg" cols ="30" rows="10" placeholder = "ENTER YOUR MESSAGE"></textarea>
+    <input type="submit" value="SEND" id ="SEND">
+        
+    
+    
+    </form>
+    
+</section>    
+    
+    
+<section id = "calculator">
+<h1 class = "headings">CALCULATOR</h1>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+
+<div class="calculatorlayout">
+    <table border="1" cellspacing="0">
+        <tr>
+            <td colspan="4" id="x">0</td>
+        </tr>
+        <tr>
+            <td colspan="3"><button onclick="calculate(this);">AC</button></td>
+            <td><button onclick="calculate(this);">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="calculate(this);">7</button></td>
+            <td><button onclick="calculate(this);">8</button></td>
+            <td><button onclick="calculate(this);">9</button></td>
+            <td><button onclick="calculate(this);">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="calculate(this);">4</button></td>
+            <td><button onclick="calculate(this);">5</button></td>
+            <td><button onclick="calculate(this);">6</button></td>
+            <td><button onclick="calculate(this);">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="calculate(this);">1</button></td>
+            <td><button onclick="calculate(this);">2</button></td>
+            <td><button onclick="calculate(this);">3</button></td>
+            <td><button onclick="calculate(this);">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="calculate(this);">0</button></td>
+            <td><button onclick="calculate(this);">.</button></td>
+            <td><button onclick="calculate(this);">=</button></td>
+        </tr>
+    </table>
+</div>
+ 
+<script>
+    var x = document.getElementById('x');
+     
+    function calculate(obj) {
+         
+        var y = obj.innerHTML;
+         
+        if (y == '=') {
+          
+            x.innerHTML = eval(x.innerHTML);
+             
+        } else if (y == 'AC') {
+            // All Clear
+            x.innerHTML = '0';
+             
+        } else {
+            if (x.innerHTML == '0') {
+                x.innerHTML = y;
+                 
+            } else {
+                x.innerHTML += y;   
+            }
+        }
+    }
+</script>    
+    
+    
+    
+</section>
+    
+</body>
+    
+    
+
+</html>
